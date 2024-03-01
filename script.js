@@ -81,7 +81,7 @@ function displayBodyInfo(planet) {
   planetInfoContainer.appendChild(moons);
 }
 
-// Funktion för att söka efter en planet eller solen baserat på användarens inmatning
+// Funktion för att söka efter en planet eller solen
 function searchBody(bodyName, planetInfoContainer) {
   // Hämta data från API:et och jämför med användarens inmatning
   fetchData()
