@@ -1,0 +1,222 @@
+body {
+  color: white;
+  padding: 0 20px;
+  margin: 0;
+  background: linear-gradient(to right, #01012a, #000000);
+}
+
+h1, h2 {
+  font-size: 70px;
+  font-family: "anta";
+  color: rgb(36, 119, 208);
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 40px;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  color: #22057b;
+}
+
+p {
+  font-size: 25px;
+}
+
+.rubrikText {
+  color: rgb(253, 216, 6);
+}
+
+.underRubrikText {
+  color: rgb(252, 107, 10);
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: rgb(218, 157, 65);
+  border-radius: 20px;
+  color: rgb(197, 106, 50);
+  border: solid;
+  border-color: rgb(216, 125, 34);
+  width: 300px;
+  height: 30px;
+}
+
+input::placeholder {
+  color: rgb(249, 223, 162);
+}
+
+#searchButton {
+  font-size: 25px;
+  width: 100px;
+  height: 60px;
+  border-radius: 20px;
+  color: rgb(249, 223, 162);
+  border: solid;
+  border-color: rgb(216, 125, 34);
+  background-color: rgb(218, 157, 65);
+}
+
+#planet-info {
+  max-width: 1000px;
+  font-family: "anta";
+  color: rgb(36, 119, 208);
+}
+
+.planetContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.planets {
+  margin: 0 10px;
+  padding: 10px;
+}
+
+
+/* Himlakropp "design" */
+.sun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  border: 1px solid rgba(217, 183, 13, 0.37);
+  margin: 15px;
+  flex-direction: column;
+  box-shadow: 0 0 50px 10px rgb(231, 147, 4);
+  background: linear-gradient(to right, #e29209, #fcce00, #fcb500, #eb962e, #f2ac07, #dc830f);
+}
+
+.mercury {
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 1px solid rgb(91, 51, 22);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 40% 0%, #8f6c03, #765631, #69633f);
+}
+
+.venus {
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 1px solid rgb(102, 67, 42);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 40% 0%, #a58350, #905e0e, #957716, #8b5f08);
+}
+
+.earth {
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid rgb(21, 90, 53);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 40% 0%, #a0a7d6, #5678c1, #225c95, #107d2d, #1ea12d, #208283, #2f77d0, #097593);
+}
+
+.mars {
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid rgb(132, 64, 16);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: linear-gradient(to right, #ef3e08, #7d4500);
+}
+
+.jupiter {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid rgb(110, 89, 74);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 110% -20%, #c3aa7c, #ac6b33, #bf9472, #4e310a, #755740, #c96f2a);
+}
+
+.saturn {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgb(167, 154, 99);
+  border-radius: 50%;
+  margin: 0 10px;
+  position: relative;
+  background: radial-gradient(circle at 30% 20%, #d4cbb9, #f2cb7e, #86682c, #ecbe08);
+}
+
+.saturn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 120px;
+  height: 5px;
+  background-color: rgba(218, 235, 89, 0.729);
+  transform: translate(-30%, -20%) rotate(25deg);
+  box-shadow: 0 0 10px 2px rgb(159, 164, 119);
+}
+
+.uranus {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgb(67, 119, 140);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 10% 35%, #27dab9, #31a7b9, #40a2af, #33a8a6, #3c809b, #5eb8b9);
+}
+
+.neptune {
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 1px solid rgb(52, 73, 131);
+  border-radius: 50%;
+  margin: 0 10px;
+  background: radial-gradient(circle at 20% 55%, #4d8bd2, #13244d);
+}
+
+
+/* Anpassa för mindre skärm */
+@media screen and (max-width: 768px) {
+  h1, h2 {
+      font-size: 50px;
+  }
+
+  body {
+      background: none;
+      background-color: #01012a;
+  }
+
+  #searchInput {
+      font-size: 30px;
+      width: 200px;
+      height: 30px;
+  }
+
+  #searchButton {
+      font-size: 25px;
+      width: 80px;
+      height: 60px;
+  }
+
+  .planetContainer {
+      max-width: 600px;
+      align-items: center;
+   
+  }
+}
